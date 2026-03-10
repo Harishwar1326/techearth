@@ -20,16 +20,16 @@ function App() {
 
   const binaryStreams = useMemo(
     () =>
-      Array.from({ length: 120 }, (_, index) => {
+      Array.from({ length: 84 }, (_, index) => {
         const moveRight = Math.random() > 0.35;
 
         return {
           id: index,
           digit: Math.random() > 0.5 ? "1" : "0",
-          duration: 8 + Math.random() * 8,
+          duration: 18 + Math.random() * 14,
           delay: Math.random() * 10,
           fontSize: 12 + Math.random() * 12,
-          opacity: 0.18 + Math.random() * 0.38,
+          opacity: 0.07 + Math.random() * 0.18,
           startX: moveRight
             ? -25 + Math.random() * 55
             : 70 + Math.random() * 50,
