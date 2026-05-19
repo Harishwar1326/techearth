@@ -1344,15 +1344,21 @@ body {
   z-index: 31;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  gap: 8px;
-  padding: 10px 14px 12px;
-  border-radius: 14px;
-  border: 1px solid rgba(126, 191, 255, 0.42);
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px 20px 28px;
+  border-radius: 16px;
+  border: 2px solid rgba(200, 230, 255, 0.6);
   background:
-    linear-gradient(160deg, rgba(6, 12, 34, 0.92), rgba(3, 8, 24, 0.96)),
-    radial-gradient(circle at 20% 12%, rgba(109, 182, 255, 0.16), rgba(109, 182, 255, 0));
+    linear-gradient(135deg, rgba(173, 216, 255, 0.95), rgba(200, 240, 255, 0.92)),
+    radial-gradient(circle at 40% 30%, rgba(173, 216, 255, 1), rgba(200, 240, 255, 0.8));
   box-sizing: border-box;
+  box-shadow: 
+    0 8px 32px rgba(100, 180, 255, 0.25),
+    inset 0 2px 8px rgba(255, 255, 255, 0.4),
+    0 0 60px rgba(100, 150, 255, 0.15);
+  backdrop-filter: blur(10px);
 }
 
 .home-top-nav {
@@ -1371,21 +1377,42 @@ body {
 }
 
 .home-brand-mark {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 31;
-  font-size: clamp(2.2rem, 5.4vw, 3.6rem);
+  font-size: clamp(2.4rem, 5.8vw, 4rem);
   font-weight: 900;
-  letter-spacing: 0.06em;
-  background: linear-gradient(90deg, #8c7cff, #47c8ff, #f7bf61);
+  letter-spacing: 0.08em;
+  background: linear-gradient(135deg, #1a4d6d, #0d6ba8, #0088cc);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-align: left;
-  line-height: 1.05;
-  margin-bottom: 8px;
-  text-shadow: 0 0 18px rgba(129, 195, 255, 0.22);
+  text-align: center;
+  line-height: 1.1;
+  margin: 0;
+  text-shadow: 
+    0 0 30px rgba(70, 180, 255, 0.5),
+    0 0 60px rgba(70, 180, 255, 0.3),
+    0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
+  filter: drop-shadow(0 0 20px rgba(70, 180, 255, 0.4)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+  animation: shiningGlow 3s ease-in-out infinite;
+}
+
+@keyframes shiningGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(70, 180, 255, 0.4)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+    text-shadow: 
+      0 0 30px rgba(70, 180, 255, 0.5),
+      0 0 60px rgba(70, 180, 255, 0.3),
+      0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    filter: drop-shadow(0 0 40px rgba(70, 180, 255, 0.6)) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+    text-shadow: 
+      0 0 50px rgba(70, 180, 255, 0.7),
+      0 0 80px rgba(70, 180, 255, 0.5),
+      0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .home-nav-links {
@@ -1796,8 +1823,9 @@ body {
 @media (max-width: 900px) {
   .home-top-shell {
     top: 0;
-    align-items: stretch;
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
   }
 
   .home-top-nav {
@@ -1808,8 +1836,8 @@ body {
   }
 
   .home-brand-mark {
-    position: static;
-    text-align: left;
+    position: relative;
+    text-align: center;
   }
 
   .home-nav-links {
