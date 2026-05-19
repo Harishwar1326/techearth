@@ -557,6 +557,7 @@ export default function Home() {
                       <li>Go to Settings → Billing &amp; Licensing</li>
                       <li>Fill in required profile details</li>
                       <li>Ensure your information matches your academic records</li>
+
                     </ul>
                   </div>
 
@@ -573,6 +574,8 @@ export default function Home() {
                           educational benefits ↗
                         </a>
                       </li>
+                      <li>NOTE(if you are not in college) : In your browser, add the extension named "spoof location ", add IPaddress of your college in spoof location, now continue with further steps
+</li>
                       <li>Click Get Student Benefits</li>
                       <li>Select your school/university</li>
                       <li>
