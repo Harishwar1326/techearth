@@ -573,9 +573,9 @@ export default function Home() {
                           educational benefits ↗
                         </a>
                       </li>
-                      <li>NOTE(if you are not in college) : in your browser, add the extension named "spoof location ", add ipaddress of your college in spoof location, now continue with further steps
+                      <li>NOTE(If you are not in college) : In your browser, add the extension named "spoof location ", add ipaddress of your college in spoof location using maps, now continue with further steps
 
-include this point in step 4 in student developer pack</li>
+</li>
                       <li>Click Get Student Benefits</li>
                       <li>Select your school/university</li>
                       <li>
